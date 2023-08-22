@@ -66,13 +66,6 @@ namespace Project_1
         public void Remove(int playerId)
         {
             int i;
-            //foreach(Player player in oneDayTeam)
-            //{
-            //    if(player.PlayerId == playerId)
-            //    {
-            //        oneDayTeam.Remove(player);
-            //    }
-            //}
             for(i=count-1;i>=0;i--)
             {
                 if (oneDayTeam[i].PlayerId == playerId)
@@ -81,10 +74,6 @@ namespace Project_1
                     count -= 1;
                 }
             }
-            //if(count == 0)
-            //{
-            //    Console.WriteLine("No player to remove");
-            //}
         }
     }
 }

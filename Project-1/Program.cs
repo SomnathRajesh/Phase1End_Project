@@ -22,6 +22,7 @@ internal class Program
                     Console.WriteLine("Enter Player Age");
                     player.PlayerAge = int.Parse(Console.ReadLine());
                     team.Add(player);
+                    Console.WriteLine("Player is added successfully");
                     break;
                 case 2:
                     Console.WriteLine("Enter Player Id to Remove:");
