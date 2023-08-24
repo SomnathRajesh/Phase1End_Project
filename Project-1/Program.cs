@@ -5,6 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         string op;
+        int c = 0;
         OneDayTeam team = new OneDayTeam();
         do
         {
@@ -22,7 +23,11 @@ internal class Program
                     Console.WriteLine("Enter Player Age");
                     player.PlayerAge = int.Parse(Console.ReadLine());
                     team.Add(player);
-                    Console.WriteLine("Player is added successfully");
+                    c += 1;
+                    if (c < 12)
+                    {
+                        Console.WriteLine("Player is added successfully");
+                    }
                     break;
                 case 2:
                     Console.WriteLine("Enter Player Id to Remove:");
